@@ -40,7 +40,6 @@ Student::Student() : studentID(base_val), studentName(base_str), collegeName(bas
 Student::Student(const int& student_ID, const string& student_name, const string& college_name, const string& student_address) : studentID(student_ID), studentName(student_name), collegeName(college_name), studentAddress(student_address) {
     cout << "constructor with arguments \n";
 }
-// dont truely understand whats going on here
 Student::Student(const Student& girl) {
    cout << "copy constructor \n";
    studentID = girl.studentID;
@@ -52,7 +51,6 @@ Student::Student(const Student& girl) {
 Student::~Student() {
    cout << "destructor \n";
 }
-// don't understand the code block below
 Student& Student::operator = (const Student& o) {
    if(this != &o) {
        studentID = o.studentID;
